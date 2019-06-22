@@ -1,0 +1,67 @@
+import copy
+import node
+import utils
+import math
+import math
+
+def alpha_beta_pruning(curr_node, player, alpha, beta):
+	score = utils.calculate_score(curr_node.get_board(), player)
+	print("score: " + str(score))
+	if score in [math.inf, -math.inf]:
+		print("score-end: " + str(score))
+		#print(curr_node.get_board())
+		curr_node.set_score(score)
+		return score
+	
+	if curr_node.get_depth() == 2:
+		print("score-depth: " + str(score))
+		#print(curr_node.get_board())
+		curr_node.set_score(score)
+		return score
+
+	moves = utils.get_available_moves(curr_node.get_board())
+
+	if moves == []:
+		print("score-tie: " + str(score))
+		#print(curr_node.get_board())
+		curr_node.set_score(score)
+		return score
+
+	if player == 1:
+		move_score = -math.inf
+
+		for move in moves:
+			new_board = utils.perform_move(copy.deepcopy(curr_node.get_board()), move, player)
+			new_node = node.Node(curr_node, new_board, curr_node.get_depth() + 1, player, move)
+			curr_node.add_lower(new_node)
+
+			move_score = max(move_score, alpha_beta_pruning(new_node, 2, alpha, beta))
+			print("score-node: " + str(move_score))
+			alpha = max(alpha, move_score)
+			print("alpha: " + str(alpha))
+			if alpha >= beta:
+				print("score-max: " + str(move_score))
+				#print(curr_node.get_board())
+				break
+			
+		return move_score
+	else:
+		move_score = -math.inf
+
+		for move in moves:
+			new_board = utils.perform_move(copy.deepcopy(curr_node.get_board()), move, player)
+			new_node = node.Node(curr_node, new_board, curr_node.get_depth() + 1, player, move)
+			curr_node.add_lower(new_node)
+		
+			move_score = min(move_score, alpha_beta_pruning(new_node, 1, alpha, beta))
+			print("score-node: " + str(move_score))
+			beta = min(beta, move_score)
+			print("beta: " + str(beta))
+			if alpha >= beta:
+				print("score-min: " + str(move_score))
+				#print(curr_node.get_board())
+				break
+		
+		return move_score
+
+	#return move_score

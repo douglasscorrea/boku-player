@@ -1,5 +1,5 @@
 class Node():
-	def __init__(self, upper, board, depth, last_player, move, id):
+	def __init__(self, upper, board, depth, last_player, move):
 		self.upper = upper
 		self.board = board
 		self.depth = depth
@@ -18,6 +18,10 @@ class Node():
 	def get_upper(self):
 		return self.upper
 
+	def show_board(self):
+		for s in self.board:
+			print(*s)
+			
 	def get_board(self):
 		return self.board
 
