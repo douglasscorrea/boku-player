@@ -27,7 +27,7 @@ def minimax(curr_node, player):
 
 	for move in moves:
 		new_board = utils.perform_move(copy.deepcopy(curr_node.get_board()), move, player)
-		new_node = node.Node(curr_node, new_board, curr_node.get_depth() + 1, player, move)
+		new_node = node.Node(curr_node, new_board, curr_node.get_depth() + 1, move)
 		curr_node.add_lower(new_node)
 
 		if player == 1:
@@ -44,6 +44,4 @@ def minimax(curr_node, player):
 		score = min(score_list)
 		curr_node.set_score(score)
 
-	#print("return score")
-	#print(curr_node.get_depth())
 	return score

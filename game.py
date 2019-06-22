@@ -9,6 +9,7 @@ import alpha_beta_pruning as abp
 
 
 def game(player, board):
+	# minimax
 	# if player == 1:
 	# 	root = node.Node(-1, board, 0, 2, 0)
 	# 	score = minimax.minimax(copy.copy(root), 1)
@@ -16,11 +17,12 @@ def game(player, board):
 	# 	root = node.Node(-1, board, 0, 1, 0)
 	# 	score = minimax.minimax(copy.copy(root), 2)
 
+	# alpha-beta pruning
 	if player == 1:
-		root = node.Node(-1, board, 0, 2, 0)
+		root = node.Node(-1, board, 0, 0)
 		score = abp.alpha_beta_pruning(root, 1, -math.inf, math.inf)
 	else:
-		root = node.Node(-1, board, 0, 1, 0)
+		root = node.Node(-1, board, 0, 0)
 		score = abp.alpha_beta_pruning(root, 2, -math.inf, math.inf)
 
 	lowers = root.get_lowers()
@@ -28,8 +30,6 @@ def game(player, board):
 	move = lowers[0].get_move()
 
 	for lower in lowers:
-		if lower.get_score() == -math.inf:
-			print("move: " + str(lower.get_move()))
 		if player == 1:
 			if(lower.get_score() > best_score):
 				best_score = lower.get_score()
