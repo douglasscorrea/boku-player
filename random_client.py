@@ -48,3 +48,7 @@ while not done:
     
     # Descansa um pouco para nao inundar o servidor com requisicoes
     time.sleep(1)
+
+
+
+

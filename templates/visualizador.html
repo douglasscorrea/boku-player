@@ -26,14 +26,14 @@
 
 			incl = 10;
 
-			x = (column)*w + x0;
-			if (column<=5)
-	   		y = line*h - incl*column + y0;
-			else{
-	   		y0 = h - incl*5 + y0;
-	   		y = y0 + line*h -h - incl*(5-column);
-			}
-			return [x,y]
+    		x = (column)*w + x0;
+    		if (column<=5)
+        		y = line*h - incl*column + y0;
+    		else{
+        		y0 = h - incl*5 + y0;
+        		y = y0 + line*h -h - incl*(5-column);
+    		}
+         	return [x,y]
 		}
 
 		function pieceClicked(id){
@@ -51,13 +51,13 @@
 		}
 
 		function circle(posx,posy,color){
-			var canvas = document.getElementById("canvas");
-			var context = canvas.getContext("2d");
+		    var canvas = document.getElementById("canvas");
+		    var context = canvas.getContext("2d");
 
-			context.fillStyle = color;
-			context.beginPath();
-			context.arc(posx, posy, 5, 0, 2 * Math.PI);
-			context.fill();			
+		    context.fillStyle = color;
+		    context.beginPath();
+		    context.arc(posx, posy, 5, 0, 2 * Math.PI);
+		    context.fill();			
 		}
 
 		function circle_div(posx,posy,color,id){
@@ -73,25 +73,25 @@
 		}
 
 		function print_board(board){
-			var canvas = document.getElementById("canvas");
-			var context = canvas.getContext("2d");
+		    var canvas = document.getElementById("canvas");
+		    var context = canvas.getContext("2d");
 			var img = document.getElementById("board");
 			context.drawImage(img, 0, 0);
 
-			for(column=0;column<board.length;column++)
-			   for(line=0;line<board[column].length;line++){
-				  coords = get_coordinates(column,line);
-				  if (board[column][line] == 0)
-					 color = 'white';
-				  else
-				  	if (board[column][line] == 1)
-					 	color = 'red';
-				  	else
-					 	color = 'green';
-				   c = column+1;
-				   l = line+1;
-				  circle_div(105+coords[0],45+coords[1],color,'c_'+c.toString()+"_"+l.toString());
-			   }  			   
+		    for(column=0;column<board.length;column++)
+		        for(line=0;line<board[column].length;line++){
+		            coords = get_coordinates(column,line);
+		            if (board[column][line] == 0)
+		                color = 'white';
+		            else
+		            	if (board[column][line] == 1)
+		                	color = 'red';
+		            	else
+		                	color = 'green';
+		             c = column+1;
+		             l = line+1;
+		            circle_div(105+coords[0],45+coords[1],color,'c_'+c.toString()+"_"+l.toString());
+		        }  		        
 		}
 
 		board = [[0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0]];
@@ -100,8 +100,8 @@
 			$.ajax({
 			  url: "/tabuleiro",
 			  success: function( result ) {
-				board = eval(result);
-				print_board(board);
+			    board = eval(result);
+			    print_board(board);
 			  }
 			});
 
@@ -112,7 +112,7 @@
 			$.ajax({
 			  url: "/jogador",
 			  success: function( result ) {
-				$("#jogador").html(result);
+			    $("#jogador").html(result);
 			  }
 			});			
 		}
@@ -121,7 +121,7 @@
 			$.ajax({
 			  url: "/num_movimentos",
 			  success: function( result ) {
-				$("#movimentos").html(result);
+			    $("#movimentos").html(result);
 			  }
 			});			
 		}	
@@ -130,7 +130,7 @@
 			$.ajax({
 			  url: "/ultima_jogada",
 			  success: function( result ) {
-				$("#ultima_jogada").html(result);
+			    $("#ultima_jogada").html(result);
 			  }
 			});			
 		}	
@@ -146,7 +146,7 @@
 			$.ajax({
 			  url: "/reiniciar",
 			  success: function( result ) {
-				atualiza();
+			    atualiza();
 			  }
 			});				
 		}
