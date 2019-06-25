@@ -6,7 +6,7 @@ import math
 import utils
 import minimax
 import alpha_beta_pruning as abp
-
+import ABP
 
 def game(player, board):
 	# minimax
@@ -18,28 +18,38 @@ def game(player, board):
 	# 	score = minimax.minimax(copy.copy(root), 2)
 
 	# alpha-beta pruning
-	if player == 1:
+
+	abp_class = ABP.ABP()
+
+	if player == '1':
 		root = node.Node(-1, board, 0, 0)
-		score = abp.alpha_beta_pruning(root, 1, -math.inf, math.inf)
+		score = abp.alpha_beta_pruning(root, 1, abp_class)
 	else:
 		root = node.Node(-1, board, 0, 0)
-		score = abp.alpha_beta_pruning(root, 2, -math.inf, math.inf)
+		score = abp.alpha_beta_pruning(root, 2, abp_class)
 
 	lowers = root.get_lowers()
-	best_score = lowers[0].get_score()
-	move = lowers[0].get_move()
+	if (len(lowers) > 0):
+		best_score = lowers[0].get_score()
+		#print('beta: ' + str(abp_class.get_beta()))
+		move = lowers[0].get_move()
+		#print('move: ' + str(move))
 
-	for lower in lowers:
-		if player == 1:
-			if(lower.get_score() > best_score):
-				best_score = lower.get_score()
-				move = lower.get_move()
-		else:
-			if(lower.get_score() < best_score):
-				best_score = lower.get_score()
-				move = lower.get_move()
+		for lower in lowers:
+			#print('score lower: ' + str(lower.get_score()))
+			if player == '1':
+				if(lower.get_score() > best_score):
+					best_score = lower.get_score()
+					move = lower.get_move()
+			else:
+				if(lower.get_score() < best_score):
+					best_score = lower.get_score()
+					move = lower.get_move()
 
-	print('final score: ' + str(best_score))
-	print('best move: ' + str(move))
-	#utils.show_tree([root])
-	return move
+		print('final score: ' + str(best_score))
+		print('best move: ' + str(move))
+		#utils.show_tree([root])
+		return move
+	else:
+		print('best move: ' + str(root.get_move()))
+		return root.get_move()
