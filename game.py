@@ -8,7 +8,7 @@ import minimax
 import alpha_beta_pruning as abp
 import ABP
 
-def game(player, board):
+def game(player, board, server_moves):
 	# minimax
 	# if player == 1:
 	# 	root = node.Node(-1, board, 0, 2, 0)
@@ -21,12 +21,17 @@ def game(player, board):
 
 	abp_class = ABP.ABP()
 
+	removal_move = utils.removal_piece(board, server_moves, player)
+	forbidden_moves = utils.forbidden_moves(board, server_moves)
+	if removal_move:
+		return [removal_move[0]-1, removal_move[1]-1]
+
 	if player == '1':
 		root = node.Node(-1, board, 0, 0)
-		score = abp.alpha_beta_pruning(root, 1, abp_class)
+		score = abp.alpha_beta_pruning(root, 1, abp_class, forbidden_moves)
 	else:
 		root = node.Node(-1, board, 0, 0)
-		score = abp.alpha_beta_pruning(root, 2, abp_class)
+		score = abp.alpha_beta_pruning(root, 2, abp_class, forbidden_moves)
 
 	lowers = root.get_lowers()
 	if (len(lowers) > 0):

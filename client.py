@@ -33,11 +33,26 @@ while not done:
 		resp = urllib.request.urlopen("%s/tabuleiro" % host)
 		#print(resp.read())
 		tabuleiro = eval(resp.read())
+
+		# tabuleiro = [
+		# 	[2, 1, 1, 2, 0], #0
+		# 	[0, 0, 0, 0, 0, 0], #1
+		# 	[0, 0, 0, 1, 1, 1, 0], #2
+		# 	[0, 0, 0, 0, 0, 0, 0, 0], #3
+		# 	[0, 0, 0, 0, 0, 0, 0, 0, 0], #4
+		# 	[1, 2, 2, 0, 0, 0, 0, 0, 0, 0], #5
+		# 	[1, 0, 0, 0, 0, 0, 0, 0, 0], #6
+		# 	[1, 0, 0, 0, 0, 0, 0, 0], #7
+		# 	[0, 0, 0, 0, 0, 0, 0], #8
+		# 	[0, 0, 0, 0, 0, 0], #9
+		# 	[0, 0, 0, 0, 0] #10
+		# ]
 		#movimentos = main.main(eval(resp.read()))
 		print(tabuleiro)
-
+		resp = urllib.request.urlopen("%s/movimentos" % host)
+		movimentos = eval(resp.read())
 		# Escolhe um movimento aleatoriamente
-		movimento = main.main(tabuleiro)
+		movimento = main.main(tabuleiro, movimentos)
 		print(movimento)
 		# Executa o movimento
 		resp = urllib.request.urlopen("%s/move?player=%d&coluna=%d&linha=%d" % (host,player,movimento[0]+1,movimento[1]+1))

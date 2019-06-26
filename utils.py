@@ -127,13 +127,13 @@ def verify_main_diagonals(board, sequence):
 				return math.inf
 			elif length == 4:
 				#print('4')
-				return 135
+				return 1350
 			elif length == 3:
 				#print('3')
-				return 45
+				return 450
 			elif length == 2:
 				#print('2')
-				return 15
+				return 150
 	
 	return 0
 
@@ -158,11 +158,11 @@ def verify_secondary_diagonals(board, sequence):
 			if length == 5:
 				return math.inf
 			elif length == 4:
-				return 135
+				return 1350
 			elif length == 3:
-				return 45
+				return 450
 			elif length == 2:
-				return 15
+				return 150
 	
 	return 0
 
@@ -188,14 +188,40 @@ def verify_verticals(board, sequence):
 			if length == 5:
 				return math.inf
 			elif length == 4:
-				return 135
+				return 1350
 			elif length == 3:
-				return 45
+				return 450
 			elif length == 2:
-				return 15
+				return 150
 	
 	return 0
 
+
+def removal_piece(board, server_moves, player):
+	if player == '1':
+		for move in server_moves:
+			if board[move[0]-1][move[1]-1] == 2:
+				return move
+	else:
+		for move in server_moves:
+			if board[move[0]-1][move[1]-1] == 1:
+				return move
+	
+	print('false')
+	return False
+
+
+def forbidden_moves(board, server_moves):
+	forbidden_moves = []
+	moves = get_available_moves(board)
+	#print(server_moves)
+	for move in moves:
+		#print([move[0]+1,move[1]+1])
+		if (move[0]+1, move[1]+1) not in server_moves:
+			print([move[0]+1,move[1]+1])
+			forbidden_moves.append([move[0]+1, move[1]+1])
+	
+	return forbidden_moves
 
 def show_tree(nodes):
 	while(len(nodes) > 0):

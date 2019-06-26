@@ -1,411 +1,236 @@
-id: 139795668042832
-idab: 139795668042832
-player 1
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 10968768
-idab: 10968768
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795268601264
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 10969248
-idab: 10969248
-idab: 10969248
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 10969248
-idab: 10969248
-idab: 10969248
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 10969248
-idab: 10969248
-idab: 10969248
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 10969248
-idab: 10969248
-idab: 10969248
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 10969248
-idab: 10969248
-idab: 10969248
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-idab: 139795668042832
-player 2
-idab: 139795668042832
-beta: inf
-beta: inf
-move: [0, 0]
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
-score lower: 0
+diff: 90
+score-foo2: 90
+score: 90
+diff: 0
+score-foo1: 0
+score: 0
+diff: 0
+score-foo2: 0
+score: 0
+diff: 0
+score-foo1: 0
+score: 0
+score-depth: 0
+score-node: -inf
+beta: -inf
+score-min: -inf
+score-node: -inf
+alpha: -inf
+diff: 0
+score-foo2: 0
+score: 0
+diff: 0
+score-foo1: 0
+score: 0
+score-depth: 0
+score-node: -inf
+beta: -inf
+score-min: -inf
+score-node: -inf
+alpha: -inf
+diff: 0
+score-foo2: 0
+score: 0
+diff: 0
+score-foo1: 0
+score: 0
+score-depth: 0
+score-node: -inf
+beta: -inf
+score-min: -inf
+score-node: -inf
+alpha: -inf
+diff: 0
+score-foo2: 0
+score: 0
+diff: 0
+score-foo1: 0
+score: 0
+score-depth: 0
+score-node: -inf
+beta: -inf
+score-min: -inf
+score-node: -inf
+alpha: -inf
+diff: 0
+score-foo2: 0
+score: 0
+diff: 0
+score-foo1: 0
+score: 0
+score-depth: 0
+score-node: -inf
+beta: -inf
+score-min: -inf
+score-node: -inf
+alpha: -inf
+diff: 0
+score-foo2: 0
+score: 0
+diff: 0
+score-foo1: 0
+score: 0
+score-depth: 0
+score-node: -inf
+beta: -inf
+score-min: -inf
+score-node: -inf
+alpha: -inf
+diff: 0
+score-foo2: 0
+score: 0
+diff: 0
+score-foo1: 0
+score: 0
+score-depth: 0
+score-node: -inf
+beta: -inf
+score-min: -inf
+score-node: -inf
+alpha: -inf
+diff: 0
+score-foo2: 0
+score: 0
+diff: 0
+score-foo1: 0
+score: 0
+score-depth: 0
+score-node: -inf
+beta: -inf
+score-min: -inf
+score-node: -inf
+alpha: -inf
+diff: 0
+score-foo2: 0
+score: 0
+diff: 0
+score-foo1: 0
+score: 0
+score-depth: 0
+score-node: -inf
+beta: -inf
+score-min: -inf
+score-node: -inf
+alpha: -inf
+diff: 0
+score-foo2: 0
+score: 0
+diff: 0
+score-foo1: 0
+score: 0
+score-depth: 0
+score-node: -inf
+beta: -inf
+score-min: -inf
+score-node: -inf
+alpha: -inf
+diff: 0
+score-foo2: 0
+score: 0
+diff: 0
+score-foo1: 0
+score: 0
+score-depth: 0
+score-node: -inf
+beta: -inf
+score-min: -inf
+score-node: -inf
+alpha: -inf
+diff: 0
+score-foo2: 0
+score: 0
+diff: 0
+score-foo1: 0
+score: 0
+score-depth: 0
+score-node: -inf
+beta: -inf
+score-min: -inf
+score-node: -inf
+alpha: -inf
+diff: 0
+score-foo2: 0
+score: 0
+diff: 0
+score-foo1: 0
+score: 0
+score-depth: 0
+score-node: -inf
+beta: -inf
+score-min: -inf
+score-node: -inf
+alpha: -inf
+diff: 0
+score-foo2: 0
+score: 0
+diff: 0
+score-foo1: 0
+score: 0
+score-depth: 0
+score-node: -inf
+beta: -inf
+score-min: -inf
+score-node: -inf
+alpha: -inf
+diff: 0
+score-foo2: 0
+score: 0
+diff: 0
+score-foo1: 0
+score: 0
+score-depth: 0
+score-node: -inf
+beta: -inf
+score-min: -inf
+score-node: -inf
+alpha: -inf
+diff: 0
+score-foo2: 0
+score: 0
+diff: 0
+score-foo1: 0
+score: 0
+score-depth: 0
+score-node: -inf
+beta: -inf
+score-min: -inf
+score-node: -inf
+alpha: -inf
+diff: 0
+score-foo2: 0
+score: 0
+diff: 0
+score-foo1: 0
+score: 0
+score-depth: 0
+score-node: -inf
+beta: -inf
+score-min: -inf
+score-node: -inf
+alpha: -inf
+diff: 0
+score-foo2: 0
+score: 0
+diff: 0
+score-foo1: 0
+score: 0
+score-depth: 0
+score-node: -inf
+beta: -inf
+score-min: -inf
+score-node: -inf
+alpha: -inf
+score-foo2: inf
+score: inf
+score-end: inf
+score-node: inf
+alpha: inf
+score-max: inf
+score-node: -inf
+beta: -inf
+score-min: -inf
+best: 0
+length: 1
+lower: 0
 final score: 0
-best move: [0, 0]
+best move: [0, 4]

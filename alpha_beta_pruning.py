@@ -4,7 +4,7 @@ import utils
 import math
 import heuristics as h
 
-def alpha_beta_pruning(curr_node, player, abp_class):
+def alpha_beta_pruning(curr_node, player, abp_class, forbidden_moves):
 	alpha = abp_class.get_alpha()
 	beta = abp_class.get_beta()
 	score = utils.calculate_score(curr_node.get_board(), player)
@@ -20,7 +20,10 @@ def alpha_beta_pruning(curr_node, player, abp_class):
 		return score
 
 	moves = utils.get_available_moves(curr_node.get_board())
-
+	for move in moves:
+		if [move[0]+1, move[1]+1] in forbidden_moves:
+			moves.remove(move)
+		
 	if moves == []:
 		#print('no moves')
 		curr_node.set_score(score)
@@ -48,11 +51,12 @@ def alpha_beta_pruning(curr_node, player, abp_class):
 		best_score = -math.inf
 
 		for move in moves:
+			#if move not in forbidden_moves:
 			new_board = utils.perform_move(copy.deepcopy(curr_node.get_board()), move, player)
 			new_node = node.Node(curr_node, new_board, curr_node.get_depth() + 1, move)
 			curr_node.add_lower(new_node)
 		
-			move_score = alpha_beta_pruning(new_node, 2, abp_class)
+			move_score = alpha_beta_pruning(new_node, 2, abp_class, forbidden_moves)
 
 			best_score = max(best_score, move_score)
 			abp_class.set_alpha(max(alpha, best_score))
@@ -65,12 +69,13 @@ def alpha_beta_pruning(curr_node, player, abp_class):
 		best_score = math.inf
 
 		for move in moves:
+			#if move not in forbidden_moves:
 			new_board = utils.perform_move(copy.deepcopy(curr_node.get_board()), move, player)
 			new_node = node.Node(curr_node, new_board, curr_node.get_depth() + 1, move)
 			curr_node.add_lower(new_node)
 
-			move_score = alpha_beta_pruning(new_node, 1, abp_class)
-			
+			move_score = alpha_beta_pruning(new_node, 1, abp_class, forbidden_moves)
+
 			best_score = min(best_score, move_score)
 			abp_class.set_beta(min(beta, best_score))
 			if alpha >= abp_class.get_beta():
