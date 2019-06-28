@@ -11,12 +11,10 @@ def alpha_beta_pruning(curr_node, player, abp_class, forbidden_moves):
 
 	if score in [math.inf, -math.inf]:
 		curr_node.set_score(score)
-		#print('score: ' + str(score))
 		return score
 	
 	if curr_node.get_depth() == 2:
 		curr_node.set_score(score)
-		#print('score return: ' + str(score))
 		return score
 
 	moves = utils.get_available_moves(curr_node.get_board())
@@ -25,7 +23,6 @@ def alpha_beta_pruning(curr_node, player, abp_class, forbidden_moves):
 			moves.remove(move)
 		
 	if moves == []:
-		#print('no moves')
 		curr_node.set_score(score)
 		return score
 
@@ -51,7 +48,6 @@ def alpha_beta_pruning(curr_node, player, abp_class, forbidden_moves):
 		best_score = -math.inf
 
 		for move in moves:
-			#if move not in forbidden_moves:
 			new_board = utils.perform_move(copy.deepcopy(curr_node.get_board()), move, player)
 			new_node = node.Node(curr_node, new_board, curr_node.get_depth() + 1, move)
 			curr_node.add_lower(new_node)
@@ -69,7 +65,6 @@ def alpha_beta_pruning(curr_node, player, abp_class, forbidden_moves):
 		best_score = math.inf
 
 		for move in moves:
-			#if move not in forbidden_moves:
 			new_board = utils.perform_move(copy.deepcopy(curr_node.get_board()), move, player)
 			new_node = node.Node(curr_node, new_board, curr_node.get_depth() + 1, move)
 			curr_node.add_lower(new_node)

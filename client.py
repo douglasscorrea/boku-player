@@ -53,7 +53,6 @@ while not done:
 		movimentos = eval(resp.read())
 		# Escolhe um movimento aleatoriamente
 		movimento = main.main(tabuleiro, movimentos)
-		print(movimento)
 		# Executa o movimento
 		resp = urllib.request.urlopen("%s/move?player=%d&coluna=%d&linha=%d" % (host,player,movimento[0]+1,movimento[1]+1))
 		msg = eval(resp.read())

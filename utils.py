@@ -72,8 +72,6 @@ def calculate_score_player1(board):
 	elif max(score) == math.inf:
 		return math.inf
 
-	# print('board: ' + str(board))
-	# print('score: ' + str(max(score)))
 	return max(score) - max(score_enemy)
 
 
@@ -119,7 +117,6 @@ def verify_main_diagonals(board, sequence):
 	]
 
 	length = len(sequence)
-	#print('sequence: ' + sequence)
 	for row in main_diagonals:	
 		if sequence in ''.join(str(i) for i in row):
 			if length == 5:
@@ -207,18 +204,15 @@ def removal_piece(board, server_moves, player):
 			if board[move[0]-1][move[1]-1] == 1:
 				return move
 	
-	print('false')
 	return False
 
 
 def forbidden_moves(board, server_moves):
 	forbidden_moves = []
 	moves = get_available_moves(board)
-	#print(server_moves)
+
 	for move in moves:
-		#print([move[0]+1,move[1]+1])
 		if (move[0]+1, move[1]+1) not in server_moves:
-			print([move[0]+1,move[1]+1])
 			forbidden_moves.append([move[0]+1, move[1]+1])
 	
 	return forbidden_moves

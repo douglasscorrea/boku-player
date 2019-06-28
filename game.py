@@ -36,12 +36,9 @@ def game(player, board, server_moves):
 	lowers = root.get_lowers()
 	if (len(lowers) > 0):
 		best_score = lowers[0].get_score()
-		#print('beta: ' + str(abp_class.get_beta()))
 		move = lowers[0].get_move()
-		#print('move: ' + str(move))
 
 		for lower in lowers:
-			#print('score lower: ' + str(lower.get_score()))
 			if player == '1':
 				if(lower.get_score() > best_score):
 					best_score = lower.get_score()
@@ -53,8 +50,10 @@ def game(player, board, server_moves):
 
 		print('final score: ' + str(best_score))
 		print('best move: ' + str(move))
+		print()
 		#utils.show_tree([root])
 		return move
 	else:
 		print('best move: ' + str(root.get_move()))
+		print()
 		return root.get_move()
