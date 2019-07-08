@@ -102,6 +102,7 @@ def calculate_score_player2(board):
 
 
 def verify_main_diagonals(board, sequence):
+	score = 0
 	#print('main diagonals')
 	main_diagonals = [
 		[board[0][0], board[1][0], board[2][0], board[3][0], board[4][0], board[5][0]],
@@ -124,18 +125,19 @@ def verify_main_diagonals(board, sequence):
 				return math.inf
 			elif length == 4:
 				#print('4')
-				return 1350
+				score += 1350
 			elif length == 3:
 				#print('3')
-				return 450
+				score += 450
 			elif length == 2:
 				#print('2')
-				return 150
+				score += 150
 	
-	return 0
+	return score
 
 
 def verify_secondary_diagonals(board, sequence):
+	score = 0
 	secondary_diagonals = [
 		[board[5][0], board[6][0], board[7][0], board[8][0], board[9][0], board[10][0]],
 		[board[4][0], board[5][1], board[6][1], board[7][1], board[8][1], board[9][1], board[10][1]],
@@ -155,16 +157,17 @@ def verify_secondary_diagonals(board, sequence):
 			if length == 5:
 				return math.inf
 			elif length == 4:
-				return 1350
+				score += 1350
 			elif length == 3:
-				return 450
+				score += 450
 			elif length == 2:
-				return 150
+				score += 150
 	
-	return 0
+	return score
 
 
 def verify_verticals(board, sequence):
+	score = 0
 	verticals = [
 		[board[0][0], board[0][1], board[0][2], board[0][3], board[0][4]],
 		[board[1][0], board[1][1], board[1][2], board[1][3], board[1][4], board[1][5]],
@@ -185,13 +188,13 @@ def verify_verticals(board, sequence):
 			if length == 5:
 				return math.inf
 			elif length == 4:
-				return 1350
+				score += 1350
 			elif length == 3:
-				return 450
+				score += 450
 			elif length == 2:
-				return 150
+				score += 150
 	
-	return 0
+	return score
 
 
 def removal_piece(board, server_moves, player):
