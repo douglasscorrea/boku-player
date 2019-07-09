@@ -55,10 +55,10 @@ def win_in_2_verticals(board, player):
 
 			if (string.index(enemy) - 1) in positions:
 				return verticals_index[i][string.index(enemy) - 1]
-			if (string.index(enemy) + 3) in positions:
+			if (string.index(enemy) + 3) in positions and (string.index(enemy) - 1) in positions: 
 				return verticals_index[i][string.index(enemy) + 3]
-			else:
-				return False
+			# else:
+			# 	return False
 		i += 1
 
 	return False
@@ -107,10 +107,10 @@ def win_in_2_main_diagonals(board, player):
 
 			if (string.index(enemy) - 1) in positions:
 				return main_diagonals_index[i][string.index(enemy) - 1]
-			if (string.index(enemy) + 3) in positions:
+			if (string.index(enemy) + 3) in positions and (string.index(enemy) - 1) in positions:
 				return main_diagonals_index[i][string.index(enemy) + 3]
-			else:
-				return False
+			# else:
+			# 	return False
 		i += 1
 
 	return False
@@ -159,10 +159,10 @@ def win_in_2_secondary_diagonals(board, player):
 
 			if (string.index(enemy) - 1) in positions:
 				return secondary_diagonals_index[i][string.index(enemy) - 1]
-			if (string.index(enemy) + 3) in positions:
+			if (string.index(enemy) + 3) in positions and (string.index(enemy) - 1) in positions:
 				return secondary_diagonals_index[i][string.index(enemy) + 3]
-			else:
-				return False
+			# else:
+			# 	return False
 		i += 1
 
 	return False

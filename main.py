@@ -20,7 +20,7 @@ def main(board, server_moves):
 	# 	[0, 0, 0, 0, 0, 0], 
 	# 	[0, 0, 0, 0, 0]
 	# ]
-
+	
 	heuristics = vh.verify_heuristics(board, sys.argv[1])
 	#heuristics = None
 
